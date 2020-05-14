@@ -4,3 +4,16 @@
 # Add the speechtotext line with your audio file
 # Make the pull request once the above the steps are accomplished
 # Also upload the text file generated from the conversion to the forked repository and make a pull request
+
+import speech_recognition as sr
+r = sr.Recognizer()
+with sr.AudioFile('audionew.wav') as source:
+     audio_text = r.listen(source)
+    try:
+        
+        text = r.recognize_google(audio_text)
+        print('Converting audio transcripts into text ...')
+        print(text)
+     
+    except:
+         print('run again...')
