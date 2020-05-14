@@ -20,3 +20,4 @@ def speechtotext(AUDIO_FILE):
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service;{0}".format(e))
 speechtotext("sample1.wav")
+speechtotext("mysample.wav")
