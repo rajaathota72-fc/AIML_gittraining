@@ -1,1 +1,6 @@
-
+# Fork the repository
+# Record an audio file for 1 min and convert into .wav file
+# upload the file into the folder in which the code is present
+# Add the speechtotext line with your audio file
+# Make the pull request once the above the steps are accomplished
+# Also upload the text file generated from the conversion to the forked repository and make a pull request
