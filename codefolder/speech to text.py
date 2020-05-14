@@ -12,11 +12,12 @@ def speechtotext(AUDIO_FILE):
         text = r.recognize_google(audio)
     try:
         print(text)
-        file = open('anu_audio_text', 'w')
+        file = open('textfinal', 'w')
         file.write(text)
         file.close()
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service;{0}".format(e))
+speechtotext("sample1.wav")
 speechtotext("anu_audio.wav")
