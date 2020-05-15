@@ -5,15 +5,10 @@
 # Make the pull request once the above the steps are accomplished
 # Also upload the text file generated from the conversion to the forked repository and make a pull request
 import speech_recognition as sr
-def speechtotext(AUDIO_FILE):
+def speechtotext('sample1.wav'):
     r = sr.Recognizer()
-    with sr.AudioFile(AUDIO_FILE) as source:
-        audio = r.record(source)
-        text = r.recognize_google(audio)
-    try:
-        print(text)
-        file = open('textfinal', 'w')
-        file.write(text)
+    with sr.AudioFile('sample1.wav') as source:
+        audio
         file.close()
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
@@ -23,10 +18,9 @@ def speechtotext(AUDIO_FILE):
 speechtotext("RC.wav")
 speechtotext("newspeech (online-audio-converter.com).wav")
 speechtotext("sample1.wav")
-
 speechtotext("mysample.wav")
-
 speechtotext("anu_audio.wav")
 speechtotext("TanishaDugar.wav")
+
 
 
